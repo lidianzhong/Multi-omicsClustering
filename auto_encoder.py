@@ -26,7 +26,7 @@ class AutoEncoder(nn.Module):
         decoded = self.decoder(encoded)
         return decoded
 
-    def train(self, x_train, x_test, epochs=50, batch_size=256):
+    def train(self, x_train, x_test, epochs=50, batch_size=32):
         """
         Train the autoencoder and return the encoder and decoder models.
 
